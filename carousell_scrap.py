@@ -86,7 +86,7 @@ while tries < 5:  # retrying loop as the div class position is random
         parse_mode = 2
         continue
 else:
-    raise RuntimeError('Parsing failed as it still faces IndexError after 10 tries.')
+    raise RuntimeError('Parsing failed as it still faces IndexError after 5 tries.')
 
 driver.quit()
 print(f'Parse success using mode {parse_mode}! Sample item parsed:')
